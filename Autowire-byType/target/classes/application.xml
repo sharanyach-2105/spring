@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="id1" class="com.ibm.Categories" autowire="byType">
+		<property name="name" value="General Books"></property>
+	
+	</bean>
+	<bean id="b123" class="com.ibm.Book">
+	<property name="bookname" value="The Kids"></property>
+	<property name="bookprice" value="300"></property>
+	</bean>
+	<bean id="sk" class="com.ibm.Sample">
+	<property name="samplename" value="The sample Kids"></property>
+	<property name="sampleprice" value="500"></property>
+	</bean>
+    
+   </beans>
